@@ -1,0 +1,30 @@
+{
+  "name": "@wext/test",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "LinusU/wext-test",
+  "bin": {
+    "wext-test": "bin.js"
+  },
+  "scripts": {
+    "test": "HEADLESS=1 ./bin.js test/*.js | tap-mocha-reporter spec"
+  },
+  "dependencies": {
+    "browserify": "^16.2.2",
+    "chromedriver": "^2.41.0",
+    "fs-temp": "^1.1.2",
+    "geckodriver": "^1.12.2",
+    "is-travis": "^2.0.0",
+    "mocha": "^5.2.0",
+    "neodoc": "^2.0.2",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "tap-merge": "^0.3.1",
+    "write-json-file": "^3.0.2"
+  },
+  "devDependencies": {
+    "tap-mocha-reporter": "^3.0.7"
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}
